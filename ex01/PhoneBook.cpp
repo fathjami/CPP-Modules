@@ -60,4 +60,5 @@ void    PhoneBook :: search_contact()
         std:: cout << std:: setw(10) << check_lenght(contact[i].nickname) << "|\n" << std:: endl;
     }
     get_contact_index();
+    
 }

@@ -4,6 +4,7 @@
 int Contact:: create_contact()
 {
     std:: cin.ignore();
+    
     std:: cout << "first-name: ";
     std:: getline(std:: cin, first_name);
     std:: cout << "last-name: ";

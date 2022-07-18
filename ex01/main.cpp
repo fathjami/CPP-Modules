@@ -21,5 +21,6 @@ int main(void)
         else if (input.compare("SEARCH") == 0)
             phonebook.search_contact();
     }while (input.compare("EXIT"));
+    
     return 0;
 }
