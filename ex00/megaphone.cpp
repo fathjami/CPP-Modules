@@ -4,10 +4,14 @@ int main(int ac, char *av[])
 {
     if (ac > 1)
     {
-        for(size_t i = 0; i < strlen(av[1]); i++)
+        for (int j = 1; av[j]; j++)
         {
-            char c = toupper(av[1][i]);
-            std:: cout << c; 
+            for(size_t i = 0; i < strlen(av[j]); i++)
+            {
+                char c = toupper(av[j][i]);
+                std:: cout << c; 
+            }
+            std:: cout << ' ';   
         }
         std:: cout << '\n';
     }

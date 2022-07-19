@@ -10,11 +10,16 @@ GREEN 	= \x1b[42m
 
 all: $(NAME)
 
-$(NAME):
-	@ $(CC) $(SRC) -o $(NAME)
+$(NAME): $(OBJ)
+	@$(CC) $(OBJ) -o $(NAME)
 	@printf " $(GREEN) SUCCESS\n"
+
+%.o: %.c $(INCLUDS)
+	@$(CC) -c $< -o $@
+
 clean:
 	@ $(RM) $(OBJ)
+	
 fclean: clean
 	@ $(RM) $(NAME)
 re: fclean all
