@@ -11,7 +11,6 @@ void(Harl:: *p[4])(void) = {&Harl::debug,
                         "INFO",
                         "WARNING",
                         "ERROR"};
-   int i = 0;
    for (int i = 0; i < 4 ; i++)
    {
        if (f[i].compare(level) == 0)
