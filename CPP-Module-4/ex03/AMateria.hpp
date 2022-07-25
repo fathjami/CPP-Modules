@@ -1,5 +1,4 @@
 
-
 #ifndef AMATERIA_HPP
 # define AMATERIA_HPP
 
@@ -23,4 +22,4 @@ public:
     virtual void        use(ICharacter& target);
 };
 
-#endif 
+#endif // AMATERIA_HPP 

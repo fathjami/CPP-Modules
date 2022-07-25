@@ -1,5 +1,4 @@
 
-
 #ifndef CHARACTER_HPP
 #define CHARACTER_HPP
 
@@ -27,4 +26,4 @@ public:
     void                use(int idx, ICharacter& target);
 };
 
-#endif 
+#endif // CHARACTER_HPP

@@ -17,4 +17,4 @@ class Cure : public AMateria
         virtual void        use(ICharacter& target);
 };
 
-#endif 
+#endif

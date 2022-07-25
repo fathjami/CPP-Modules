@@ -1,5 +1,4 @@
 
-
 #include "AMateria.hpp"
 
 AMateria::AMateria( void ) : _type("")
