@@ -1,7 +1,7 @@
 
 #include "ShrubberyCreationForm.hpp"
 
-ShrubberyCreationForm::ShrubberyCreationForm( std::string target ) : Form(target, 145, 137)
+ShrubberyCreationForm::ShrubberyCreationForm( std::string target ) : _target(target),Form("shrubberyCreationForm", 145, 137)
 {
     // std::cout << "ShrubberyCreationForm constructor called" << std::endl;
 }
@@ -32,7 +32,7 @@ void    ShrubberyCreationForm::execute( Bureaucrat const &executor ) const
         if (executor.getGrade() > this->getGradeToExecute())
             throw Form::GradeTooLowException();   
                  
-    std::ofstream file( this->getName() + "_shrubbery" );
+    std::ofstream file( this->getTarget() + "_shrubbery" );
     file << "                      ___" << std::endl;
     file << "                _,-'\"\"   \"\"\"\"`--." << std::endl;
     file << "             ,-'          __,,-- \\" << std::endl;
@@ -61,3 +61,6 @@ void    ShrubberyCreationForm::execute( Bureaucrat const &executor ) const
     file.close();
 }
 
+std::string ShrubberyCreationForm::getTarget() const{
+    return this->_target;
+}

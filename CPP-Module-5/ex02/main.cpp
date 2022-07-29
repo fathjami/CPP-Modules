@@ -10,7 +10,7 @@
 int	main( void )
 {
 	Bureaucrat				bureaucrat("bureaucrat", 4);
-	ShrubberyCreationForm	shrubberyCreationForm("shrubberyCreationForm");
+	ShrubberyCreationForm	shrubberyCreationForm("Bender");
 	std::cout << "\n------> Testing the ShrubberyCreationForm class:\n";
 	try {
 		bureaucrat.signForm(shrubberyCreationForm);
@@ -27,7 +27,7 @@ int	main( void )
 
 
 	std::cout << "\n-------> Testing the RobotomyRequestForm class:\n";
-	RobotomyRequestForm	robotomyRequestForm("robotomyRequestForm");
+	RobotomyRequestForm	robotomyRequestForm("Max");
 	try {
 		bureaucrat.signForm(robotomyRequestForm);
 	}
@@ -50,7 +50,7 @@ int	main( void )
 
 
 	std::cout << "\n----------> Testing the PresidentialPardonForm class:\n";
-	PresidentialPardonForm	presidentialPardonForm("presidentialPardonForm");
+	PresidentialPardonForm	presidentialPardonForm("Lisa");
 	try {
 		bureaucrat.signForm(presidentialPardonForm);
 	}

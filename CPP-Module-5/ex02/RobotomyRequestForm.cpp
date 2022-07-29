@@ -1,7 +1,7 @@
 
 #include "RobotomyRequestForm.hpp"
 
-RobotomyRequestForm::RobotomyRequestForm(std::string target) :Form(target, 72, 45)
+RobotomyRequestForm::RobotomyRequestForm(std::string target): _target(target),Form("RbotomyRequestForm", 72, 45)
 {
     // std::cout << "RobotomyRequestForm created for " << target << std::endl;
 }
@@ -34,10 +34,14 @@ void RobotomyRequestForm::execute(Bureaucrat const &executor) const
         if (!i)
         {
             i = 1;
-            std::cout << "Bureaucrat " << executor.getName() << " has been robotomized" << std::endl;
+            std::cout << this->getTarget() << " has been robotomized" << std::endl;
         }
         else{
             i = 0;
-            std::cout << "Bureaucrat " << executor.getName() << " has not been robotomized" << std::endl;
+            std::cout << this->getTarget() << " has not been robotomized" << std::endl;
         }
+}
+
+std::string RobotomyRequestForm::getTarget() const{
+    return this->_target;
 }
