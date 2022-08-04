@@ -33,7 +33,7 @@ converting from a **narrower** numeric type *(such as char)* to a **wider** nume
 There are five basic types:
 
 1. Converting an integral type to any other integral type (excluding integral promotions).
-2. 1. Converting a floating point type to any other floating point type (excluding floating-point promotions).
+2. Converting a floating point type to any other floating point type (excluding floating-point promotions).
 3. Converting a floating point type to any integral type.
 4. Converting an integral type to any floating point type.
 5. Converting an integral type or a floating point type to a bool.
