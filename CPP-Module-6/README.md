@@ -77,7 +77,8 @@ It has two particularities:
 - Dynamic cast only works with polymorphic classes; at least one of the member functions has to be virtual.
 
 <aside>
-❗ - when converting pointers the dynamic cast either returns the converted address(success), or NULL (failure), so we need to check the result.          - when converting references NULL pointer can not be returned on failure, an exception (bad_cast) is thrown instead.
+❗ - when converting pointers the dynamic cast either returns the converted address(success), or NULL (failure), so we need to check the result.          
+  - when converting references NULL pointer can not be returned on failure, an exception (bad_cast) is thrown instead.
 
 </aside>
 
