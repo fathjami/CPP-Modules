@@ -15,13 +15,13 @@ examples:
 - When an argument passed to a function is a different type than the function parameter.
 
 <aside>
-❗ when a type conversion is invoked the compiler determines if it’s possible if not the compilation fails with a compile error.
+❗ when a type conversion is invoked the compiler determines if it’s possible, if not the compilation fails with a compile error.
 
 </aside>
 
 ## Numeric Promotions:
 
-converting from a **narrower** numeric type *(such as char)* to a **wider** numeric type*( such as int or double)* is called **numeric promotion**, It can be processed efficiently and is less likely to have a result that overflows. There are two types: **integral promotions** *(ex: char to int)* and **floating point promotions***(ex: float to double)*
+converting from a **narrower** numeric type *(such as char)* to a **wider** numeric type*( such as int or double)* is called **numeric promotion**, it can be processed efficiently and it's less likely to have a result that overflows. There are two types: **integral promotions** *(ex: char to int)* and **floating point promotions***(ex: float to double)*
 
 <aside>
 ❗ while the integral promotion is `value-preserving`, it is not necessarily `sign-preserving.`
@@ -51,7 +51,7 @@ it’s an identity cast where the base value keeps the same bits after conversio
 
 ## Upcasting:
 
- is converting a derived-class reference or pointer to a base-class.It is always allowed for **public**
+ is converting a derived-class reference or pointer to a base-class. It is always allowed for **public**
  inheritance, without an explicit type cast.
 
 ## Downcasting:
@@ -60,7 +60,7 @@ The opposite process, converting a base-class pointer (reference) to a derived-c
 
 ## Static_cast:
 
-we use the static_cast in the simple conversions like narrowing conversion by doing that we inform the compiler that we are aware of this conversion and it’s meant to be not a programming mistake.
+we use the static_cast in the simple conversions; like narrowing conversion. By doing that we inform the compiler that we are aware of this conversion and it’s meant to be, not just a programming mistake.
 
 <aside>
 ❗ static cast allows us to convert between addresses belonging to the same inheritance tree otherwise it’s not possible, and it’ll cause a compilation error.
