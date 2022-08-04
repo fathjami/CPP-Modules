@@ -43,7 +43,7 @@ There are five basic types:
 
 </aside>
 
-[How data is stored in computer memory](https://www.log2base2.com/storage/how-data-is-stored-in-computer-memory.html)
+[How data is stored in computer memory] (https://www.log2base2.com/storage/how-data-is-stored-in-computer-memory.html)
 
 ## Reinterpretation:
 
