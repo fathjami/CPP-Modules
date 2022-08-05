@@ -10,12 +10,12 @@ examples:
 
 - When initializing (or assigning a value to) a variable with a value of a different data type.
 - When the type of the return value is different from the function’s declared return type.
-- When using certain binary operators whit operands of different types.
+- When using certain binary operators with operands of different types.
 - When using a non-Boolean value in an if-statement.
 - When an argument passed to a function is a different type than the function parameter.
 
 <aside>
-❗ when a type conversion is invoked the compiler determines if it’s possible, if not the compilation fails with a compile error.
+❗ when a type conversion is invoked the compiler determines if it’s possible, if not the compilation fails with an error.
 
 </aside>
 
@@ -56,7 +56,7 @@ it’s an identity cast where the base value keeps the same bits after conversio
 
 ## Downcasting:
 
-The opposite process, converting a base-class pointer (reference) to a derived-class pointer (reference) is called **downcasting.** Downcasting is not allowed without an explicit type cast.
+The opposite process, converting a base-class pointer (reference) to a derived-class pointer (reference) is called **downcasting, it is not allowed without an explicit type cast.
 
 ## Static_cast:
 
