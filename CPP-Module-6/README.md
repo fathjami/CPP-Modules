@@ -97,7 +97,7 @@ It has two particularities:
   - when converting references NULL pointer can not be returned on failure, an exception (bad_cast) is thrown instead.
 
 </aside>
-</br>
+<hr>
 
 ```cpp
 dynamic_cast<Type *>(ptr);
