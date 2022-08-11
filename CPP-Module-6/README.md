@@ -98,8 +98,11 @@ It has two particularities:
 
 </aside>
 
+```cpp
 dynamic_cast<Type *>(ptr);
-converts the pointer ptr to a pointer of type Type* if the pointer-to object (*ptr) is of type Type or else derived directly or indirectly from type Type. Otherwise, the expression evaluates to 0, the null pointer.
+```
+
+converts the pointer **ptr** to a pointer of type **Type*** if the pointer-to object (*ptr) is of type **Type** or else derived directly or indirectly from type **Type**. Otherwise, the expression evaluates to 0, the null pointer.
 
 **Note:** dynamic cast works since the actual type hidden is the same one we want to convert to, this allows us to identify the real type pointer/reference.
 
