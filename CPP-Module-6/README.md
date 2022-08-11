@@ -86,11 +86,6 @@ Assuming this inheritance tree (the dreaded diamond):
 ## Cross cast
 
 A **cross cast** or **side cast** is when dynamic_cast<Left*>(pRight) returns a Left* that properly behaves as a Left*. This happens when pRight points to a MostDerived object. Cross casts only work with dynamic_cast, not reinterpret_cast or static_cast. (we talked about up/down casts previously)
-```cpp
-dynamic_cast<Type *>(ptr);
-```
-
-converts the pointer **ptr** to a pointer of type **Type*** if the pointer-to object (*ptr) is of type **Type** or else derived directly or indirectly from type **Type**. Otherwise, the expression evaluates to 0, the null pointer.
 
 It has two particularities:
 
@@ -102,6 +97,9 @@ It has two particularities:
   - when converting references NULL pointer can not be returned on failure, an exception (bad_cast) is thrown instead.
 
 </aside>
+
+dynamic_cast<Type *>(ptr);
+converts the pointer ptr to a pointer of type Type* if the pointer-to object (*ptr) is of type Type or else derived directly or indirectly from type Type. Otherwise, the expression evaluates to 0, the null pointer.
 
 **Note:** dynamic cast works since the actual type hidden is the same one we want to convert to, this allows us to identify the real type pointer/reference.
 
