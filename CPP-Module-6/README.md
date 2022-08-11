@@ -70,6 +70,11 @@ we use the static_cast in the simple conversions; like narrowing conversion. By 
 ## Dynamic_cast:
 
 Safely converts pointers and references to classes up, down, and sideways along the inheritance hierarchy.
+```cpp
+dynamic_cast<Type *>(ptr);
+```
+
+converts the pointer **ptr** to a pointer of type **Type*** if the pointer-to object (*ptr) is of type **Type** or else derived directly or indirectly from type **Type**. Otherwise, the expression evaluates to 0, the null pointer.
 
 It has two particularities:
 
