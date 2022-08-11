@@ -98,6 +98,7 @@ It has two particularities:
 
 </aside>
 
+
 ```cpp
 dynamic_cast<Type *>(ptr);
 ```
