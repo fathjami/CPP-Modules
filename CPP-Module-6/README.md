@@ -70,6 +70,22 @@ we use the static_cast in the simple conversions; like narrowing conversion. By 
 ## Dynamic_cast:
 
 Safely converts pointers and references to classes up, down, and sideways along the inheritance hierarchy.
+Assuming this inheritance tree (the dreaded diamond):
+
+```
+        BaseClass
+       /         \
+      V           V
+   Left          Right
+       \        /
+        V      V
+       MostDerived
+
+```
+
+## Cross cast
+
+A **cross cast** or **side cast** is when dynamic_cast<Left*>(pRight) returns a Left* that properly behaves as a Left*. This happens when pRight points to a MostDerived object. Cross casts only work with dynamic_cast, not reinterpret_cast or static_cast. (we talked about up/down casts previously)
 ```cpp
 dynamic_cast<Type *>(ptr);
 ```
